@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NODATA® | Cart</title>
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">NODATA®</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="drops.html">Drops</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="cart.html" class="active">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="cart-container">
+    <h2>Your Cart</h2>
+
+    <div class="cart-items">
+      <div class="cart-item">
+        <img src="/img/fail_forward.png" alt="Fail Forward Tee">
+        <div class="item-details">
+          <h3>Fail Forward Tee</h3>
+          <p>Size: L</p>
+          <p>Price: $48</p>
+          <label>Qty:
+            <input type="number" value="1" min="1" class="quantity-input" />
+          </label>
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <img src="/img/systemloyalty.png" alt="System Loyalty Tee">
+        <div class="item-details">
+          <h3>System Loyalty Tee</h3>
+          <p>Size: M</p>
+          <p>Price: $46</p>
+          <label>Qty:
+            <input type="number" value="1" min="1" class="quantity-input" />
+          </label>
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-summary">
+      <h3>Order Summary</h3>
+      <p>Subtotal: <span id="subtotal">$94</span></p>
+      <p>Shipping: <span>$5</span></p>
+      <p><strong>Total: <span id="total">$99</span></strong></p>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>NODATA® — No Signal. No Record. &copy; 2025</p>
+  </footer>
+
+  <script src="cart.js"></script>
+</body>
+</html>
