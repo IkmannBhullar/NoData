@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NODATA® | Checkout</title>
+  <link rel="stylesheet" href="checkout.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="checkout-header">
+    <h1> <a href="/client/index.html">NODATA® | Home</a></h1>
+    <p>Checkout</p>
+  </header>
+
+  <!-- Main Checkout Container -->
+  <main class="checkout-container">
+    <!-- Checkout Form -->
+    <form class="checkout-form">
+      <section>
+        <h2>Shipping Information</h2>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="text" placeholder="Address" required />
+        <input type="text" placeholder="City" required />
+        <input type="text" placeholder="Postal Code" required />
+        <input type="text" placeholder="Country" required />
+      </section>
+
+      <section>
+        <h2>Payment Details</h2>
+        <input type="text" placeholder="Card Number" required />
+        <input type="text" placeholder="MM/YY" required />
+        <input type="text" placeholder="CVC" required />
+      </section>
+
+      <button type="submit">Place Order</button>
+    </form>
+
+    <!-- Order Summary -->
+    <aside class="order-summary">
+      <h3>Order Summary</h3>
+      <p>Subtotal: $<span id="summary-subtotal">0</span></p>
+      <p>Shipping: $5</p>
+      <p><strong>Total: $<span id="summary-total">0</span></strong></p>
+    </aside>
+  </main>
+
+  <!-- JS -->
+  <script src="checkout.js"></script>
+</body>
+</html>
