@@ -5,6 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NODATA® | Corruption Inherited</title>
   <link rel="stylesheet" href="styles.css" />
+  <!-- Firebase SDK -->
+<script type="module">
+  // Import Firebase (modular)
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+  import { getFirestore, collection, getDocs, addDoc, deleteDoc, doc } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js";
+  
+  const firebaseConfig = {
+  apiKey: "AIzaSyDmtde9-4ZT2pn6ijgdZk2l450hLChTWpE",
+  authDomain: "nodata-11912.firebaseapp.com",
+  projectId: "nodata-11912",
+  storageBucket: "nodata-11912.firebasestorage.app",
+  messagingSenderId: "731773936113",
+  appId: "1:731773936113:web:7d7ff9249f3a7891c72450"
+};
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  // You can now use `db` to connect to Firestore collections
+</script>
+
 </head>
 <body>
   <!-- Header -->
@@ -15,7 +36,7 @@
         <li><a href="#shop">Shop</a></li>
         <li><a href="/client/pages/drops.html">Drops</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="/client/pages/cart.html">Cart</a></li>
+        <li><a href="/client/pages/cart/cart.html">Cart</a></li>
         <li><a href="#join">Join Us</a></li>
       </ul>
     </nav>
